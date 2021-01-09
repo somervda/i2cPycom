@@ -5,7 +5,6 @@ import bme280
 
 
 def blink(seconds, rgb):
-    # print("blink", rgb)
     pycom.rgbled(rgb)
     time.sleep(seconds/2)
     pycom.rgbled(0x000000)  # off
